@@ -5,3 +5,5 @@ tslint.json
 .prettierrc
 .prettierignore
 .editorconfig
+.idea
+src
