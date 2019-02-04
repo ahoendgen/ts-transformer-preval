@@ -21,7 +21,7 @@ This allows you to specify some code that gets transpiled, runs in Node and what
 your `run` function returns in there will be swapped. For example:
 
 ```typescript
-import { preval } from 'ts-transform-preval';
+import { preval } from 'ts-transformer-preval-macro';
 
 const data = preval`function run() {
    return 5+5; 
@@ -38,7 +38,7 @@ Something more fancy?
 
 ```typescript
 import IContentBlock from '../interfaces/IContentBlock';
-import { preval } from 'ts-transform-preval';
+import { preval } from 'ts-transformer-preval-macro';
 
 const content: IContentBlock[] = preval`
 import {FetchData, getContentPiece} from '../services/DataService';
