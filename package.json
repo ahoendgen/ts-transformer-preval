@@ -1,6 +1,6 @@
 {
   "name": "ts-transformer-preval-macro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pre-evaluate code at build-time",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
