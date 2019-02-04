@@ -1,2 +1,7 @@
-*
-!./dist/**
+.dx
+.github
+node_modules
+tslint.json
+.prettierrc
+.prettierignore
+.editorconfig
