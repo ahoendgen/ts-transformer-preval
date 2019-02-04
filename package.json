@@ -1,5 +1,5 @@
 {
-  "name": "ts-transformer-preval",
+  "name": "ts-transformer-preval-macro",
   "version": "0.0.1",
   "description": "Pre-evaluate code at build-time",
   "main": "dist/index.js",
