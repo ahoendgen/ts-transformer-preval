@@ -1,5 +1,7 @@
 # ts-transformer-preval
 
+**NOT STABLE, consider that when using it**
+
 Pre-evaluate code at build-time.
 
 Inspired by [babel-plugin-preval](https://github.com/kentcdodds/babel-plugin-preval) & forced by the behaviour of
@@ -75,6 +77,10 @@ const content: IContentBlock[] = [
   }
 ];
 ```
+
+## Install
+
+`npm i ts-transformer-preval-macro`
 
 ## Configuration
 
