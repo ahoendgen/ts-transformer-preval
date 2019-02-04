@@ -1,10 +1,11 @@
 {
   "name": "ts-transform-preval",
   "version": "0.0.1",
-  "description": "Pre-evaluate code at compile-time ¯\\_(ツ)_/¯",
+  "description": "Pre-evaluate code at build-time",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "run-s build",
     "build": "tsc",
     "test": "run-s test:*",
     "test:lint": "tslint -c ./tslint.json './src/*.(ts|tsx)'",
@@ -20,7 +21,15 @@
     "pre-evaluate",
     "preval"
   ],
-  "author": "André Hoendgen<hello@andre-hoendgen.de>",
+  "bugs": {
+    "url": "https://github.com/ahoendgen/ts-transformer-preval/issues"
+  },
+  "homepage": "https://github.com/ahoendgen/ts-transformer-preval",
+  "repository": "https://github.com/ahoendgen/ts-transformer-preval.git",
+  "author": {
+    "name": "André Hoendgen",
+    "url": "https://andre-hoendgen.de"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/find-cache-dir": "^2.0.0",
