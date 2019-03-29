@@ -23,7 +23,7 @@ your `run` function returns in there will be swapped. For example:
 ```typescript
 import { preval } from 'ts-transformer-preval-macro';
 
-const data = preval`function run() {
+const data = preval`async function run() {
    return 5+5; 
 }`;
 ```
@@ -99,11 +99,37 @@ default: `false`<br />
 If activated results of pre-evaluation will be cached until code is changed.
 `production` and `development` mode have separated caches.
 
+### debug
+
+type: `boolean`<br />
+default: `false`<br />
+
+If activated evaluated code won't be deleted so you can run & inspect it manually.
+
 ## Usage
 
 ### With loaders
 
 #### With ts-loader
+
+```javascript
+{
+    loader: 'ts-loader',
+    options: {
+        getCustomTransformers: () => {
+            return {
+                before: [
+                    prevalTransformer({
+                        cacheActivated: true,
+                        mode: isProduction ? 'prod' : 'dev',
+                        debug: false,
+                    })(),
+                ],
+            };
+        }
+    }
+}
+```
 
 #### With atl
 
