@@ -1,6 +1,6 @@
 import preevaluationTransformer from './preevaluation';
-import prevalOptions from './prevalOptions';
+import PrevalOptions from './prevalOptions';
 
-export default (options?: prevalOptions) => {
+export default (options?: PrevalOptions) => {
   return preevaluationTransformer(options || {});
 };

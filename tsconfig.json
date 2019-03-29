@@ -6,6 +6,7 @@
     "declaration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "stripInternal": true,
@@ -13,8 +14,15 @@
     "strictNullChecks": true,
     "jsx": "react",
     "outDir": "dist",
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
