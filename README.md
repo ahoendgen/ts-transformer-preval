@@ -113,8 +113,6 @@ If activated results of pre-evaluation will be cached until code is changed.
 
 1. Don´t harvest any data ¯\\\_(ツ)\_/¯
 2. Git flow
-3. Make sure to execute the pre-commit hook `ln -sf ../../.dx/hooks/pre-commit .git/hooks/pre-commit`
-4. Write tests
 
 ## Inspired by
 
