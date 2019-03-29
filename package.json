@@ -14,7 +14,7 @@
     "fix:lint": "tslint -c ./tslint.json './src/*.(ts|tsx)' --fix",
     "fix:format": "prettier --ignore-path=./.prettierignore --config=./.prettierrc --write '{.,./src,.github/**}/*.{ts,tsx,md,json}'",
     "publish": "run-s test build",
-    "releaser": "np"
+    "release": "np"
   },
   "keywords": [
     "typescript",
