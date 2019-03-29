@@ -13,8 +13,7 @@
     "fix": "run-s fix:*",
     "fix:lint": "tslint -c ./tslint.json './src/*.(ts|tsx)' --fix",
     "fix:format": "prettier --ignore-path=./.prettierignore --config=./.prettierrc --write '{.,./src,.github/**}/*.{ts,tsx,md,json}'",
-    "publish": "run-s test build",
-    "release": "np"
+    "publish": "run-s test build"
   },
   "keywords": [
     "typescript",
@@ -41,7 +40,6 @@
     "fs-extra": "^7.0.1",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
-    "np": "^4.0.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.16.4",
     "tslint": "^5.14.0",
