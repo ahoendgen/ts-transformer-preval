@@ -13,7 +13,7 @@
     "fix": "run-s fix:*",
     "fix:lint": "tslint -c ./tslint.json './src/*.(ts|tsx)' --fix",
     "fix:format": "prettier --ignore-path=./.prettierignore --config=./.prettierrc --write '{.,./src,.github/**}/*.{ts,tsx,md,json}'",
-    "publish": "run-s test build"
+    "publish": "run-s test"
   },
   "keywords": [
     "typescript",
@@ -48,7 +48,6 @@
   },
   "dependencies": {
     "find-cache-dir": "^2.1.0",
-    "crypto": "^1.0.1",
     "rimraf": "^2.6.3"
   },
   "peerDependencies": {
