@@ -1,6 +1,6 @@
 # ts-transformer-preval
 
-**NOT STABLE, consider that when using it**
+**PROOF OF CONCEPT / NOT STABLE, consider that when using it**
 
 Pre-evaluate code at build-time.
 
